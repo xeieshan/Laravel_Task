@@ -1,0 +1,6 @@
+hi 
+i have completed all the points of the test excluding use vite as the bundler
+
+basically i have installed laravel 8 the reason is locally i have php version  7.4.28 so laravel 9 requires newer php version
+for this i have a options to upgrade php to newer version for this i need to setup php version in xampp and now i have lot of projects
+inprogress which are in laravel 5.4, 7x and 8 so upgradtion php version causes problem in my projects

@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "c264b72c-baae-4e5c-ab1c-7409d2b1d0f6",
+		"name": "testapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21044269"
+	},
+	"item": [
+		{
+			"name": "searchusers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}users/?username=Ar",
+					"host": [
+						"{{host}}users"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getposts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}posts/",
+					"host": [
+						"{{host}}posts"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createposts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "body of the post",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Asapp Studio/Desktop/temp/1.PNG"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}posts/",
+					"host": [
+						"{{host}}posts"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateposts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "body of the post2",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Asapp Studio/Desktop/temp/1.PNG",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}posts/12",
+					"host": [
+						"{{host}}posts"
+					],
+					"path": [
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteposts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}posts/13",
+					"host": [
+						"{{host}}posts"
+					],
+					"path": [
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createuserposts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "test 123",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "body of the post",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}userpost/",
+					"host": [
+						"{{host}}userpost"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
